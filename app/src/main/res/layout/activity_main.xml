@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#97BF0E">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <LinearLayout
+                android:paddingTop="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:src="@drawable/logo_ipv6"
+                    android:id="@+id/imageView"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingTop="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <Spinner
+                    android:textAlignment="center"
+                    android:id="@+id/spinnerBits"
+                    android:layout_width="300dp"
+                    android:layout_height="65dp"
+                    android:textColor="#97BF0E"
+                    android:background="@drawable/campo"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingTop="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <EditText
+                    android:textAlignment="center"
+                    android:id="@+id/editTextMacAddress"
+                    android:layout_width="300dp"
+                    android:layout_height="65dp"
+                    android:inputType="text"
+                    android:hint="MAC Address"
+                    android:textSize="16dp"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp"
+                    android:textColorHint="#97BF0E"
+                    android:textColor="#97BF0E"
+                    android:textCursorDrawable="@drawable/cursor"
+                    android:background="@drawable/campo"/>
+                <requestFocus/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingTop="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <EditText
+                    android:textAlignment="center"
+                    android:id="@+id/editTextPrefixoIpv6"
+                    android:layout_width="300dp"
+                    android:layout_height="65dp"
+                    android:inputType="text"
+                    android:hint="Prefixo IPv6"
+                    android:textSize="16dp"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp"
+                    android:textColorHint="#97BF0E"
+                    android:textColor="#97BF0E"
+                    android:textCursorDrawable="@drawable/cursor"
+                    android:background="@drawable/campo"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingTop="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <Button
+                    android:id="@+id/buttonIpv6"
+                    android:layout_width="300dp"
+                    android:layout_height="65dp"
+                    android:textSize="16dp"
+                    android:text="-"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp"
+                    android:background="@drawable/botao"
+                    android:textColor="#97BF0E"
+                    android:onClick="copiar"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/buttonExecutar"
+                    android:layout_width="300dp"
+                    android:layout_height="65dp"
+                    android:textSize="16dp"
+                    android:background="@drawable/botao"
+                    android:text="Executar"
+                    android:textColor="#97BF0E"
+                    android:onClick="converter" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <Button
+                    android:id="@+id/buttonLimpar"
+                    android:layout_width="300dp"
+                    android:layout_height="65dp"
+                    android:textSize="16dp"
+                    android:onClick="limpar"
+                    android:text="Limpar"
+                    android:textColor="#97BF0E"
+                    android:background="@drawable/botao"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

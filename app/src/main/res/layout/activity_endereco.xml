@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#97BF0E">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:textSize="16dp"
+                android:textColor="#FFFFFF"
+                android:text="Link Local:"/>
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/textViewIp01"
+                android:layout_width="300dp"
+                android:layout_height="65dp"
+                android:textSize="16dp"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:textColor="#97BF0E"
+                android:background="@drawable/campo" />
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:textSize="16dp"
+                android:textColor="#FFFFFF"
+                android:text="MAC Address:"/>
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/textViewIp02"
+                android:layout_width="300dp"
+                android:layout_height="65dp"
+                android:textSize="16dp"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:textColor="#97BF0E"
+                android:background="@drawable/campo" />
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:textSize="16dp"
+                android:textColor="#FFFFFF"
+                android:text="IPv4:"/>
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/textViewIp03"
+                android:layout_width="300dp"
+                android:layout_height="65dp"
+                android:textSize="16dp"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:textColor="#97BF0E"
+                android:background="@drawable/campo" />
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:textSize="16dp"
+                android:textColor="#FFFFFF"
+                android:text="IPv6:"/>
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/textViewIp04"
+                android:layout_width="300dp"
+                android:layout_height="65dp"
+                android:textSize="16dp"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:textColor="#97BF0E"
+                android:background="@drawable/campo" />
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:textSize="16dp"
+                android:textColor="#FFFFFF"
+                android:text="IPv4 (local):"/>
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/textViewIp05"
+                android:layout_width="300dp"
+                android:layout_height="65dp"
+                android:textSize="16dp"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:textColor="#97BF0E"
+                android:background="@drawable/campo" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

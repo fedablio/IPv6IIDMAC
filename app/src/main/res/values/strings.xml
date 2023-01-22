@@ -1,0 +1,9 @@
+<resources>
+    <string name="txt01">IPv6 IID MAC</string>
+
+    <string-array name="array01">
+        <item>Bits (Interface)</item>
+        <item>48</item>
+        <item>64</item>
+    </string-array>
+</resources>
